@@ -66,7 +66,7 @@ class LionTest {
             "Самец, true",
             "Самка, false"
     })
-    void lionConstructor_ShouldSetManeBasedOnSex(String sex, boolean expectedHasMane) throws Exception {
+    void lionConstructorShouldSetManeBasedOnSexTest(String sex, boolean expectedHasMane) throws Exception {
         Feline feline = new Feline(); // Зависимость для Lion
         Lion lion = new Lion(feline, sex);
 

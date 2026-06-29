@@ -27,7 +27,7 @@ class CatTest {
     }
 
     @Test
-    void getSound_ShouldReturnMeow_WhenCalled() {
+    void getSoundShouldReturnMeowWhenCalledTest() {
         // Arrange не требуется
 
         // Act
@@ -38,7 +38,7 @@ class CatTest {
     }
 
     @Test
-    void getFood_ShouldReturnResultFromEatMeatMethod() throws Exception {
+    void getFoodShouldReturnResultFromEatMeatMethodTest() throws Exception {
         // Arrange - Настраиваем поведение мока для метода eatMeat()
         List<String> expectedFood = Arrays.asList("Молоко", "Сметана");
         when(felineMock.eatMeat()).thenReturn(expectedFood);
@@ -52,7 +52,7 @@ class CatTest {
     }
 
     @Test
-    void eatMeat_ShouldUsePredatorInterfaceMethodFromFeline() throws Exception {
+    void eatMeatShouldUsePredatorInterfaceMethodFromFelineTest() throws Exception {
         // Arrange - Тестируем взаимодействие через интерфейс Predator
         List<String> meatMenu = Arrays.asList("Мышь", "Курица");
         when(felineMock.eatMeat()).thenReturn(meatMenu);

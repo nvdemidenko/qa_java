@@ -13,7 +13,7 @@ class FelineTest {
     private final Feline feline = new Feline();
 
     @Test
-    void eatMeat_ShouldReturnPredatorDiet() throws Exception {
+    void eatMeatShouldReturnPredatorDietTest() throws Exception {
         // Act: Вызываем метод, который хотим проверить.
         List<String> diet = feline.eatMeat();
 
@@ -27,7 +27,7 @@ class FelineTest {
     }
 
     @Test
-    void getFamily_ShouldReturnCatFamily() {
+    void getFamilyShouldReturnCatFamilyTest() {
         // Act: Вызываем метод.
         String family = feline.getFamily();
 
@@ -38,7 +38,7 @@ class FelineTest {
     }
 
     @Test
-    void getKittens_WithoutArguments_ShouldReturnDefaultValue() {
+    void getKittensWithoutArgumentsShouldReturnDefaultValueTest() {
         // Act: Вызываем метод без аргументов.
         int kittens = feline.getKittens();
 
@@ -48,7 +48,7 @@ class FelineTest {
     }
 
     @Test
-    void getKittens_WithArgument_ShouldReturnPassedValue() {
+    void getKittensWithArgumentShouldReturnPassedValueTest() {
         // Arrange: Определяем тестовые данные.
         int expectedCount = 5;
 
